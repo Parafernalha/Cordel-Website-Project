@@ -1,2 +1,91 @@
 @charset "UTF-8";
 
+*
+{
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-black:#595758;
+    --color-raising-black:#272838;
+    --color-rich-black:#02020A;
+    --color-eerie-black:#191716;
+    --color-white:#FFFFFF;
+
+}
+html, body
+{
+    min-height: 100vh;
+}
+header, footer
+{
+    color: var(--color-white);
+    background-color: var(--color-rich-black);
+    text-align: center;
+}
+
+
+header > h1
+{
+    padding-top: 50px;
+    font: small-caps; /*Opção menos "gritante" do que o "text transform" que joga todas as letras para maiusculas*/
+    /*text-transform: capitalize;*/ 
+}
+header > p
+{
+    color: var(--color-white);
+    padding-bottom:50px;
+    padding-top: 0%;
+}
+header a:hover
+{
+    text-decoration: underline solid white;
+}
+a
+{
+    color: #FFFFFF;
+    font-weight: bolder;
+
+}
+section /*Configurações a serem aplicadas para ambas as sections (com imagem de fundo e sem imagens)*/
+{
+padding-top: 10vh;
+padding-bottom: 10vh;
+line-height: 2em; /*espaçamento entre linhas*/
+padding-left: 50px;
+}
+section.sem-imagem /*Configurações a serem aplicadas somente as sections sem imagens de fundo*/
+{
+background-color:var(--color-white);
+color: #FFFFFF;
+
+}
+section.sem-imagem > p
+{
+    background-color: var(--color-raising-black);
+    width: 400px;
+}
+section.com-imagem /*Configurações a serem aplicadas apenas as section com imagem de fundo*/
+{
+background-color:var(--color-raising-black);
+color: #FFFFFF;
+}
+section.com-imagem > p
+{
+    width: 400px;
+    background-color: var(--color-raising-black);
+}
+footer a:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline solid white;
+    font-weight: bolder;
+}
+footer
+{
+    padding: 50px;
+}
