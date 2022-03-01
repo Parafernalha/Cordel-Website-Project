@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 *
 {
@@ -7,6 +9,7 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 
 :root
 {
@@ -17,9 +20,17 @@
     --color-white:#FFFFFF;
 
 }
+:root
+{
+    --fonte1:Verdana,geneva,tahoma,sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;;
+
+}
 html, body
 {
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 header, footer
 {
@@ -33,7 +44,9 @@ header > h1
 {
     padding-top: 50px;
     font: small-caps; /*Opção menos "gritante" do que o "text transform" que joga todas as letras para maiusculas*/
-    /*text-transform: capitalize;*/ 
+    /*text-transform: capitalize;*/
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 header > p
 {
@@ -57,6 +70,8 @@ padding-top: 10vh;
 padding-bottom: 10vh;
 line-height: 2em; /*espaçamento entre linhas*/
 padding-left: 50px;
+font-family: var(--fonte3);
+font-size: 3.5vh;
 }
 section.sem-imagem /*Configurações a serem aplicadas somente as sections sem imagens de fundo*/
 {
@@ -66,18 +81,40 @@ color: #FFFFFF;
 }
 section.sem-imagem > p
 {
-    background-color: var(--color-raising-black);
-    width: 400px;
+
+    width: 700px;
+    color: black;
+    padding-bottom: 2em;
+ 
 }
 section.com-imagem /*Configurações a serem aplicadas apenas as section com imagem de fundo*/
 {
+
 background-color:var(--color-raising-black);
 color: #FFFFFF;
+box-shadow: inset 6px 6px 13px 0px rgba(0,0,0,0.473);
+background-attachment: fixed;
+
 }
 section.com-imagem > p
 {
-    width: 400px;
-    background-color: var(--color-raising-black);
+    width: 700px;
+    background-color: rgba(0,0,0,0.253);
+    display: inline-block;
+    text-shadow:1px 1px 0px black;
+    padding-left: 5px;
+
+}
+section#imagem-um
+{
+background-image: url('../images/background001.jpg');
+background-position: right center;
+background-size: cover;
+}
+section#imagem-dois
+{
+background-image: url('../images/background002.jpg');
+background-size: cover;
 }
 footer a:hover
 {
@@ -87,5 +124,5 @@ footer a:hover
 }
 footer
 {
-    padding: 50px;
+    padding: 10px;
 }
