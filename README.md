@@ -1,7 +1,7 @@
 # Cordel-Website-Project
 This repo concerns a project of an website, developed using HTML5 and CSS3.
 
-Github pages: https://parafernalha.github.io/Cordel-Website-Project/
+<a href="https://parafernalha.github.io/Cordel-Website-Project/" rel="external" target="_blank">Github pages</a> 
 
 Concepts studied: Parallax effect, background image properties.
 
